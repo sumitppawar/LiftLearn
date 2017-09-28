@@ -5,21 +5,19 @@
     <title>Learn | Lift</title>
     <script data-lift="with-resource-id" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 </head>
-<body>
+<body data-lift="surround?with=default;at=content">
+
 <p>Welcome to lift framework</p>
-
-<div data-lift="Snippet_1.render" id="content">what?</div>
-
+<div data-lift="Snippet_1.render">what?</div>
 <br>
 <!-- PassThru Snippet -->
 <div data-lift="PassThruSinppet">
     Original Content
 </div>
-
 <!-- ClearNode Snippet-->
 <div data-lift="ClearNodesSnippet">
     Div in not cleared
 </div>
-
+<link data-lift="head" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-grid.css"></link>
 </body>
 </html>

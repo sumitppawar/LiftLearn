@@ -43,3 +43,21 @@ Sumits-MacBook-Air:LiftLearn sumit$ sbt
 ~; jetty:start; jetty:reload /
 
 ```
+* Always use designer-friendly snippet invocation mechanism.
+```
+<div data-lift="HellowWorld.howdy"></div>
+//Way to define Snippet
+
+As an HTML5 data attribute: data-lift="MySnippet"
+This is the style we use in this book, and is valid HTML5 markup.
+
+Via a CSS class: class="lift:MySnippet"
+Also valid HTML5, but you must include the "lift" prefix for Lift to recognise this as a snippet.
+
+Using the lift attribute, as in: lift="MySnippet"
+This won’t strictly validate against HTML5, but you may see it used.
+
+The XHTML namespace version: <lift:MySnippet />
+
+```
+* 
